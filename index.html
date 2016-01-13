@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>select demo</title>
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/display.css">
+    <link rel="stylesheet" href="css/sticky.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+    <script type="text/javascript" src="js/onLoadScript.js"></script>
+    <script src="js/upload.js"></script>
+  </head>
+  <body>
+<div id="sticky" class="sticky">
+    <img src="#" />
+    <div id="stickyTitle" class="sticky-title">TITLE</div>
+    <div class="divider"></div>
+    <div id="stickyMessage" class="sticky-message">CONTENT</div>
+</div>
+
+    <div id="wrapper">
+      <div class="overlay" onclick="toggleDialog('insert-form'); resetForm()"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" style="margin-top:0px" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Brand
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#"  onclick="toggleDialog('insert-form', this); resetForm()">Add <span class="caret"></span></a>
+                </li>
+                <li>
+                  <a href="#">Works</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="page-content-wrapper">
+          <div id="insert-form">
+            <a id="downloadAnchorElem" style="display:none"></a>
+            <div id="input-recipe">
+                <label id="title-label" for="title">Titolo ricetta</label><br />
+                <input id="title" type="text" name="title" /><br />
+                <label id="ingr-label" for="ingr">Ingredienti</label>
+                <button class="add-btn" onclick="addIngrRow()">+</button>
+                <div id="ingr"></div>
+                <div id="prep">
+                    <label>Preparazione</label>
+                    <button class="add-btn" onclick="addPrepRow()">+</button>
+                    <textarea class="prep" rows="4" cols="50"></textarea>
+                </div>
+                <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
+                    <div id="selectImage">
+                        <img id="previewing" src="noimage.png" />
+                        <input type="file" name="file" id="file" required />
+                    </div>
+                    <input type="submit" class="save" value="Salva" />
+                </form>
+            </div>
+          </div>
+          <div id="replace-box" style="display: none">
+            <div class="content-box">
+                <div class="content-box-img" onclick="$('#ac1').slideToggle(); changeClass('ab1', 'none')">
+                    <img src="img/alert.png" />
+                </div>
+                <div class="content-box-summary">
+                    <div class="content-box-title">
+                        <span class="content-box-application">
+                            <label id="application"></label>
+                        </span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="content-box-description">
+                        <span>
+                            <ul id="ab1" class="inline"></ul>
+                        </span>
+                    </div>
+                </div>
+                <div id="ac1" class="content-box-detail">
+                    <div class="divider"></div>
+                    <span id="preparazione">
+                        <label for="acr"> Acronimo:</label>
+                        <span id="acr">BSD_T </span><br />
+                        <label for="appl"> Applicazione:</label>
+                        <span id="appl">BSD_T </span><br />
+                        <label for="key"> Chiave:</label>
+                        <span id="key"> </span><br />
+                        <label for="key"> Data Fine Evento Effettivo:</label>
+                        <span id="key"> </span><br />
+                        <label for="key"> Data Fine Evento Previsto:</label>
+                        <span id="key">7/2/2015 3:00:00 AM</span><br />
+                        <label for="key"> Data Inizio Evento:</label>
+                        <span id="key">7/2/2015 12:00:00 AM</span><br />
+                        <label for="key"> Id Cartellino:</label>
+                        <span id="key">0012528938</span><br />
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="stick">
+            Menu del giorno
+        </div>
+    </div>
+  </body>
+</html>

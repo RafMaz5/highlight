@@ -1,0 +1,170 @@
+<!--
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+              <span class="hamb-middle"></span>
+            </button>
+            <input type="file" id="fileElem" multiple accept=".txt" style="display:none" onchange="handleFiles(this.files)">
+            <a href="#" id="fileSelect" class="btn btn-default" aria-label="Left Align">
+                <span class="glyphicon glyphicon-import" aria-hidden="true"></span> Select some files
+            </a>
+
+            <div id="select-text"> Pippo piopi upoiukjghjkhf </div>
+            <ul id="contextMenu" class="dropdown-menu" role="menu" style="display:none" >
+                <li><a tabindex="-1" href="#">Action</a></li>
+                <li><a tabindex="-1" href="#">Another action</a></li>
+                <li><a tabindex="-1" href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+            
+            <div id="id"></div>
+            PER ROBY
+            <div id="roby-view1" class="content-box" onclick="$('#ac2').slideToggle()">
+                <div class="content-box-img">
+                    <img src="img/warn.jpg" alt="Warning" title="Pay attention" width="90" />
+                </div>
+                <div class="content-box-summary">
+                    <div class="content-box-title">
+                        <span class="content-box-application">
+                            <label for="application"> Applicazione:</label>
+                            <span id="application">BDS_T </span>
+                        </span>
+                        <span class="content-box-client">
+                            <label for="client"> Cliente:</label>
+                            <span id="client">Trenitalia </span>
+                        </span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="content-box-description">
+                        <span>
+                            INIZIO INTERVENTO PREVISTO DALLE ORE 00:00 DEL 02/07/2015 DALLE ORE 03:00 DEL 02/07/2015
+                        </span>
+                    </div>
+                </div>
+                <div id="ac2" class="content-box-detail">
+                    <div class="divider"></div>
+                    <span>
+                        <label for="acr"> Acronimo:</label>
+                        <span id="acr">BSD_T </span><br />
+                        <label for="appl"> Applicazione:</label>
+                        <span id="appl">BSD_T </span><br />
+                        <label for="key"> Chiave:</label>
+                        <span id="key"> </span><br />
+                        <label for="key"> Data Fine Evento Effettivo:</label>
+                        <span id="key"> </span><br />
+                        <label for="key"> Data Fine Evento Previsto:</label>
+                        <span id="key">7/2/2015 3:00:00 AM</span><br />
+                        <label for="key"> Data Inizio Evento:</label>
+                        <span id="key">7/2/2015 12:00:00 AM</span><br />
+                        <label for="key"> Id Cartellino:</label>
+                        <span id="key">0012528938</span><br />
+                    </span>
+                </div>
+            </div>
+            <div id="roby-view2" class="content-box" onclick="$('#ac3').slideToggle()">
+                <div class="content-box-img">
+                    <img src="img/ok.png" alt="ok" title="All is ok" width="90" />
+                </div>
+                <div class="content-box-summary">
+                    <div class="content-box-title">
+                        <span class="content-box-application">
+                            <label for="application"> Applicazione:</label>
+                            <span id="application">BDS_T </span>
+                        </span>
+                        <span class="content-box-client">
+                            <label for="client"> Cliente:</label>
+                            <span id="client">Trenitalia </span>
+                        </span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="content-box-description">
+                        <span>
+                            INIZIO INTERVENTO PREVISTO DALLE ORE 00:00 DEL 02/07/2015 DALLE ORE 03:00 DEL 02/07/2015
+                        </span>
+                    </div>
+                </div>
+                <div id="ac3" class="content-box-detail">
+                    <div class="divider"></div>
+                    <span>
+                        <label for="acr"> Acronimo:</label>
+                        <span id="acr">BSD_T </span><br />
+                        <label for="appl"> Applicazione:</label>
+                        <span id="appl">BSD_T </span><br />
+                        <label for="key"> Chiave:</label>
+                        <span id="key"> </span><br />
+                        <label for="key"> Data Fine Evento Effettivo:</label>
+                        <span id="key"> </span><br />
+                        <label for="key"> Data Fine Evento Previsto:</label>
+                        <span id="key">7/2/2015 3:00:00 AM</span><br />
+                        <label for="key"> Data Inizio Evento:</label>
+                        <span id="key">7/2/2015 12:00:00 AM</span><br />
+                        <label for="key"> Id Cartellino:</label>
+                        <span id="key">0012528938</span><br />
+                    </span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <h2>Multiple Select with Search Option - Tiled Layout </h2>
+                    <div class="form-group">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="search" class="form-control" id="search" placeholder="Add your options..">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="searchable-container">
+                            <div class="items col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                                <div class="info-block block-info clearfix">
+                                    <div class="square-box pull-left">
+                                        <span class="glyphicon glyphicon-tags glyphicon-lg"></span>
+                                    </div>
+                                    <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                        <label class="btn btn-default">
+                                            <div class="bizcontent">
+                                                <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                                <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
+                                                <h5>Coffee</h5>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                                <div class="info-block block-info clearfix">
+                                    <div class="square-box pull-left">
+                                        <span class="glyphicon glyphicon-tags glyphicon-lg"></span>
+                                    </div>
+                                    <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                        <label class="btn btn-default">
+                                            <div class="bizcontent">
+                                                <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                                <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
+                                                <h5>Tea</h5>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items col-xs-5 col-sm-5 col-md-3 col-lg-3">
+                                <div class="info-block block-info clearfix">
+                                    <div class="square-box pull-left">
+                                        <span class="glyphicon glyphicon-tags glyphicon-lg"></span>
+                                    </div>
+                                    <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                        <label class="btn btn-default">
+                                            <div class="bizcontent">
+                                                <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                                <span class="glyphicon glyphicon-ok glyphicon-lg"></span>
+                                                <h5>Fruit Juice</h5>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->

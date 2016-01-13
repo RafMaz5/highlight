@@ -1,0 +1,11 @@
+    <div>
+        <select class="old-che" title="unita di misura">
+          <option onclick="showQuanto(this)" value="gr">grammi</option>
+          <option onclick="hideQuanto(this)" value="qb">quanto basta</option>
+          <option onclick="showQuanto(this)" value="ml">millilitri</option>
+          <option  onclick="showQuanto(this)"value="vs">vasetti</option>
+          <option  onclick="showQuanto(this)"value="ds">dose</option>
+        </select> 
+        <input title="quantita da immettere" class="old-quanto" type="number" min="0" step="0.1" name="quanto" />
+        <input title="Ingrediente" class="old-cosa" type="text" name="cosa" />
+    </div>

@@ -1,0 +1,39 @@
+.sticky {
+	display: none;
+	position: fixed;
+    right: 10px;
+    z-index: 2000000;
+    width: 300px;
+    min-height: 130px;
+    background: white;
+    box-shadow: 5px 8px 8px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 5px 8px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 8px 8px 0px rgba(0,0,0,0.3);
+	border-radius: 25px 5px 25px 5px;
+	-moz-border-radius: 25px 5px 25px 5px;
+	-webkit-border-radius: 25px 5px 25px 5px;
+	border: 0px solid #000000;
+}
+.sticky-title {
+    margin: 0px 30px;
+    padding: 0px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.sticky-message {
+    padding: 10px 30px;
+}
+.sticky img {
+    float: left;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+.divider.error {
+	border-color: #CC0000;
+}
+.divider.warning {
+	border-color: #EECC00;
+}
+.divider.info {
+	border-color: #00AADD;
+}
