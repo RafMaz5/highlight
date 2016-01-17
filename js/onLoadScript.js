@@ -37,7 +37,7 @@ $(document).ready(function () {
   });  
   $('.overlay').bind('click', function () {
         trigger.trigger('mouseover');
-  });  
+  });
 });
 
 /* display div like table Liketable

@@ -419,4 +419,5 @@ input:focus, select:focus, textarea:focus {
     z-index: 30000;
     color: #ddd;
     border-top: none;
+    padding-bottom: 10px;
 }

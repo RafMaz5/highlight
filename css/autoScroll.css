@@ -1,0 +1,46 @@
+body {
+    font-family:sans-serif;
+}
+#inner{
+    height:300px
+}
+#expand {
+    width:80px;
+    padding:5px;
+    border:3px double #999;
+    background-color:#fff;
+    text-align:center;
+    cursor:pointer;
+    display:none;
+ }
+#container {                             
+    width:230px;
+    overflow:hidden;
+    background-color:#fff;
+    margin:auto;
+    color: #333;
+ }
+#container #inner {                      
+    padding:10px;
+ }
+#container p {
+    margin:0;
+    padding:10px;
+    text-align:justify;
+    text-indent:1.5em;
+ }
+#container p:first-letter {
+    font-family:serif;
+    font-size:200%;
+    color:#600;
+ }
+.brdr {
+    border:1px solid #999;
+ }
+.go {
+    color:#090;
+ }
+.stop {
+    color:#900;
+ }
+
